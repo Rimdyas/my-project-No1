@@ -1,67 +1,185 @@
-.button {
-    width: 140px;
-    height: 40px;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body{
+  font-family: "Oswald", sans-serif;
+  background-image: radial-gradient(circle at 16% 83%, rgba(148, 148, 148,0.06) 0%, rgba(148, 148, 148,0.06) 50%,rgba(63, 63, 63,0.06) 50%, rgba(63, 63, 63,0.06) 100%),radial-gradient(circle at 68% 87%, rgba(66, 66, 66,0.06) 0%, rgba(66, 66, 66,0.06) 50%,rgba(105, 105, 105,0.06) 50%, rgba(105, 105, 105,0.06) 100%),radial-gradient(circle at 38% 50%, rgba(123, 123, 123,0.06) 0%, rgba(123, 123, 123,0.06) 50%,rgba(172, 172, 172,0.06) 50%, rgba(172, 172, 172,0.06) 100%),linear-gradient(90deg, hsl(18,0%,1%),hsl(18,0%,1%));
+}
+.cart-btn {
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background: linear-gradient(to left,rgb(173, 154, 255),rgb(149, 110, 255));
+    background: linear-gradient(to left, rgb(11, 11, 12), rgb(71, 69, 76));
     border-radius: 30px;
     color: rgb(255, 255, 255);
     font-weight: 600;
+    font-size: 0.9em;
+    font-family: "Martian Mono", monospace;
     border: none;
     position: relative;
     cursor: pointer;
     transition-duration: .2s;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
-  }
-  
-  .bell {
-    width: 13px;
-  }
-  
-  .bell path {
-    fill: rgb(255, 255, 255);
-  }
-  
-  .button:hover {
-    background: linear-gradient(to left,rgb(154, 131, 255),rgb(135, 91, 255));
-  }
-  
-  .button:active {
+}
+
+.bell {
+    width: 25px;
+}
+
+
+.cart-btn:hover {
+    background: linear-gradient(to left, rgb(71, 69, 76),rgb(11, 11, 12));
+    color: #fff;
+}
+
+.cart-btn:active {
     transform: scale(0.97);
     transition-duration: .2s;
-  }
-  
-  .button:hover .bell {
+}
+
+.cart-btn:hover .bell {
     animation: bellRing 0.9s both;
-  }
-  
-  /* bell ringing animation keyframes*/
-  @keyframes bellRing {
+}
+
+.cart-btn div {
+    position: relative;
+}
+
+.cart-counter {
+    background: #fff;
+    font-size: small;
+    color: rgb(135, 91, 255);
+    border-radius: 100px;
+    padding: 0 .2em;
+    position: absolute;
+    /* Змініть позицію на абсолютну */
+    top: 0;
+    /* Відступ зверху */
+    right: 0;
+    /* Відступ справа */
+}
+
+
+/* bell ringing animation keyframes*/
+@keyframes bellRing {
+
     0%,
     100% {
-      transform-origin: top;
+        transform-origin: top;
     }
-  
+
     15% {
-      transform: rotateZ(10deg);
+        transform: rotateZ(10deg);
     }
-  
+
     30% {
-      transform: rotateZ(-10deg);
+        transform: rotateZ(-10deg);
     }
-  
+
     45% {
-      transform: rotateZ(5deg);
+        transform: rotateZ(5deg);
     }
-  
+
     60% {
-      transform: rotateZ(-5deg);
+        transform: rotateZ(-5deg);
     }
-  
+
     75% {
-      transform: rotateZ(2deg);
+        transform: rotateZ(2deg);
     }
-  }
-  
+}
+
+.nav-link{
+  color: #fff;
+}
+
+.nav-link:hover{
+  color: #383232;
+  text-shadow: 1px 1px 1px white;
+}
+
+
+.banner {
+  width: 100%;
+  height: 90vh;
+  background: url("img/images.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgb(53, 50, 50);
+}
+
+
+.banner h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.frisor-h1{
+  text-align: center;
+  color: #fff;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding: 20px 0px;
+}
+
+.about-us{
+  color: #b7b2b2;
+}
+
+.map{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.adress h3{
+  text-align: center;
+  color: #b7b2b2;
+}
+
+footer{
+  background: grey;
+  padding: 20px;
+}
+
+.socials svg{
+  margin-right: 50px;
+}
+
+
+.socials{
+  display: flex;
+  justify-content: center;
+
+}
+
+.download{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.download img{
+  width: 120px;
+  margin-right: 50px;
+}
+
+.footer-text1{
+  font-size: 20px;
+  color: #333832;
+}
+
+.footer-text{
+  margin-top: 15px;
+  border-top: 1px solid #333832;
+  border-bottom: 1px solid #333832;
+  text-align: center;
+}
