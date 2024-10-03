@@ -100,86 +100,179 @@ body{
 }
 
 
+body.light-theme {
+    background-color: #e6e6e6;
+    color: rgb(24, 24, 24);
+}
+
+.poslugi{
+    text-align: center;
+    color: #a8a8a8;
+  }
+
+.btn-search{
+    border-radius: 30px;
+}
 .banner {
-  width: 100%;
-  height: 90vh;
-  background: url("img/images.jpg");
-  background-size: cover;
-  background-position: center center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: #ffffff;
-  text-shadow: 2px 2px 5px rgb(53, 50, 50);
+    width: 100%;
+    height: 90vh;
+    background: url('../img/images.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
 }
 
-
-.banner h1 {
-  font-size: 3rem;
-  text-align: center;
-}
 
 .frisor-h1{
-  text-align: center;
-  color: #fff;
-  margin-bottom: 60px;
-  margin-top: 60px;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  padding: 20px 0px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 20px 0px;
+  }
+  
+  .about-us{
+    color: #b7b2b2;
+    font-size: 25px;
+  }
+
+.banner h1 {
+    font-size: 3rem;
+    text-align: center;
 }
 
-.about-us{
-  color: #b7b2b2;
+/* Стилі карточок взято з 4 уроку 2 модуля (сайт за макетом)  */
+
+.my-card {
+    padding: 28px;
+    background-color: #5b5656;
+    transition: background .2s linear;
+    border-radius: 10px;
+    max-width: 350px;
 }
 
-.map{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+.my-card:hover {
+    background: #DCE5E2;
+    cursor: pointer;
+    transition: background .2s linear;
+    color: #272727;
 }
 
-.adress h3{
-  text-align: center;
-  color: #b7b2b2;
+.light-theme .my-card:hover {
+    background: #ffffff;
+
+}
+
+.text-my-card {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.description-card {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 0.7rem;
+
+}
+
+.price-card {
+    font-size: 1rem;
+    line-height: 1rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.my-card:hover .price-card{
+    color: #272727;
+}
+.my-card img {
+    width: 244px;
+    height: 214px;
+    object-fit: contain;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+}
+
+.container-cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    align-items: flex-start;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 72px;
 }
 
 footer{
-  background: grey;
-  padding: 20px;
+    background: grey;
+    padding: 20px;
+  }
+  
+  .socials svg{
+    margin-right: 50px;
+  }
+  
+  
+  .socials{
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  .download{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .download img{
+    width: 120px;
+    margin-right: 50px;
+  }
+  
+  .footer-text1{
+    font-size: 20px;
+    color: #333832;
+  }
+
+  .footer-text{
+    margin-top: 15px;
+    border-top: 1px solid #333832;
+    border-bottom: 1px solid #333832;
+    text-align: center;
+  }
+
+header.fixed {
+    position: fixed;
+    /* Фіксоване позиціонування */
+    top: 0;
+    /* Закріплено зверху */
+    width: 100%;
+    /* Ширина за всю ширину вікна */
+    max-width: 100%;
+    z-index: 100;
 }
 
-.socials svg{
-  margin-right: 50px;
-}
 
-
-.socials{
-  display: flex;
-  justify-content: center;
-
-}
-
-.download{
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.download img{
-  width: 120px;
-  margin-right: 50px;
-}
-
-.footer-text1{
-  font-size: 20px;
-  color: #333832;
-}
-
-.footer-text{
-  margin-top: 15px;
-  border-top: 1px solid #333832;
-  border-bottom: 1px solid #333832;
-  text-align: center;
-}
+.map{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .adress h3{
+    text-align: center;
+    color: #b7b2b2;
+  }
+  
